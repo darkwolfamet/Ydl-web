@@ -31,7 +31,7 @@ You can go to the screenshota folder in the gtihub repo to view the process
 
 1. Clone the repository:  
    ```bash
-    git clone https://github.com/yourusername/ydl-web.git
+    https://github.com/darkwolfamet/Ydl-web.git
     cd ydl-web
 2. Install dependencies:
    ```bash
