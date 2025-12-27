@@ -110,6 +110,11 @@ The download completes, for fun the animation will still keep playing
 
 ![Completed](scrceenshota/Completed.png)
 
+# DISCLAIMER
+
+All the works done hear are **`©`**  Copyrighted
+
+
 Okay then, feel free to email me the dev Carl, DarkWolf at 
 
     ametkarl71@gmail.com
