@@ -67,8 +67,8 @@ FFmpeg is required for audio extraction and MP3 conversion.
 
 ### Windows
 Download and install FFmpeg from:
-
-      git clone https://github.com/darkwolfamet/Ydl-web.git && cd Ydl-we
+      
+      https://ffmpeg.org/download.html
 ### Linux (Debian/Ubuntu)
       sudo apt install ffmpeg
 
