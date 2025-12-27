@@ -57,7 +57,9 @@ After that press **`Win + S`** to open the search bar.
 
 In the search bar type "Ydl-web"
 
-Go into the folder and right click on **`setup.bat`** and select run as admin.. to run the tool
+Go into the folder and make sure you can see the file extensions and right click on **`setup.bat`** and select run as admin.. to run the tool
+
+**`DO NOT CLICK ON setup.sh IF YOU ARE A WINDOW USER`**
 
 After running the tool, press the enter key in the cmd terminal, a url will appear, take the url and place it in your browser
 
