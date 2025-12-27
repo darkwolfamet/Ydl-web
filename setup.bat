@@ -1,20 +1,13 @@
 @echo off
-SETLOCAL
-
-:: -----------------------------------------
-:: Setup Ydl Web on Windows
-:: -----------------------------------------
-
-echo.
-echo ================================
-echo    Setting up Ydl Web
-echo ================================
-echo.
+title Ydl Web Setup
+echo ========================================
+echo    Setting up Ydl Web Environment
+echo ========================================
 
 :: Check if Python is installed
 python --version >nul 2>&1
-IF ERRORLEVEL 1 (
-    echo Python is not installed. Please install Python 3.10+ and try again.
+IF %ERRORLEVEL% NEQ 0 (
+    echo Python is not installed. Please install Python 3.10 or higher.
     pause
     exit /b
 )
@@ -33,20 +26,13 @@ call venv\Scripts\activate.bat
 echo Upgrading pip...
 python -m pip install --upgrade pip
 
-:: Install Python dependencies
-echo Installing Python dependencies...
+:: Install dependencies
+echo Installing required Python packages...
 pip install -r requirements.txt
 
-:: Install FFmpeg if not found
-where ffmpeg >nul 2>&1
-IF ERRORLEVEL 1 (
-    echo FFmpeg not found. Attempting installation via winget...
-    winget install --id=Gyan.FFmpeg -e --source winget
-    echo If winget is not available, please install FFmpeg manually from https://ffmpeg.org/download.html
-)
-
-:: Launch Streamlit app
+:: Launch the app
 echo Launching Ydl Web...
 streamlit run main.py
 
+:: Pause at the end so user can see errors if any
 pause
