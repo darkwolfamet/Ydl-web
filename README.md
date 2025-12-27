@@ -32,70 +32,26 @@ Interactive Lottie animations provide visual feedback during processing, making 
 
 ---
 
-## Screenshots
-
-Screenshots showing the full workflow are available in the **`screenshots/`** folder in this repository.
-
----
-
 ## Installation
 
-> ⚠️ **_VERY IMPORTANT:_**  
-> You **must** install `ffmpeg` before proceeding.  
-> Run the following command in your terminal:
+So we are going to cover some steps or things to do to make this succesfull
 
-1.
-            winget install ffmpeg
+## Windows:
+So on windows , before you start anything, open powershell as administrator
+And run this one command
 
+# winget install ffmpeg
 
-### Option 1: Automated Setup (Windows – Recommended)
+This command or step is very neccesary for the tool to work 
 
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/darkwolfamet/Ydl-web.git
-   cd Ydl-web
-2. Write the command:
-   ```bash
-   setup.bat
+So after you are done with that and it installs succesfully, we move on to the next step.
 
-## Option 2: Manual Setup (All Platforms)
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/darkwolfamet/Ydl-web.git
-   cd Ydl-web
-2. Install dependencies:
-   ```bash
-   pip install -r requirements.txt
-3. Run the app:
-   ```bash
-   streamlit run main.py
-4. Or Run this in the terminal
-   ```bash
-   chmod +x setup.sh
-   ./setup.sh
+![Home page](scrceenshota/Welcome.png)
 
 
-## FFmpeg Requirement (Important)
 
-FFmpeg is required for audio extraction and MP3 conversion.
 
-### Windows
-Download and install FFmpeg from:
-      
-      https://ffmpeg.org/download.html
-### Linux (Debian/Ubuntu)
-      sudo apt install ffmpeg
 
-## Usage
-
-After launching the app:
-
-1. Follow the guided prompts
-2. Choose your download format
-3. Select a file name and destination folder
-4. Wait for the download animation
-5 .Retrieve your file from the displayed path
 
 
 
