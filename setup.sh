@@ -11,10 +11,18 @@ if ! command -v python3 &> /dev/null; then
     exit 1
 fi
 
+# Ensure python3-venv is installed
+if ! python3 -m venv --help &> /dev/null; then
+    echo "python3-venv not found. Installing..."
+    sudo apt update
+    sudo apt install python3-venv -y
+fi
+
 # Check if git is installed
 if ! command -v git &> /dev/null; then
     echo "Git is not installed. Installing git..."
-    sudo apt update && sudo apt install git -y
+    sudo apt update
+    sudo apt install git -y
 fi
 
 # Clone repository if not already cloned
@@ -25,11 +33,15 @@ fi
 
 cd Ydl-web || exit
 
-# Create virtual environment if it doesn't exist
-if [ ! -d "venv" ]; then
-    echo "Creating virtual environment..."
-    python3 -m venv venv
+# Remove old virtual environment if exists
+if [ -d "venv" ]; then
+    echo "Removing old virtual environment..."
+    rm -rf venv
 fi
+
+# Create virtual environment
+echo "Creating virtual environment..."
+python3 -m venv venv
 
 # Activate virtual environment
 echo "Activating virtual environment..."
@@ -37,11 +49,11 @@ source venv/bin/activate
 
 # Upgrade pip
 echo "Upgrading pip..."
-python3 -m pip install --upgrade pip
+python -m pip install --upgrade pip
 
 # Install Python dependencies
 echo "Installing Python dependencies..."
-python3 -m pip install -r requirements.txt
+pip install -r requirements.txt
 
 # Install FFmpeg if not installed
 if ! command -v ffmpeg &> /dev/null; then
@@ -54,5 +66,4 @@ fi
 
 # Launch the app
 echo "Launching Ydl Web..."
-python3 -m streamlit run main.py
-
+python -m streamlit run main.py
