@@ -40,6 +40,14 @@ Screenshots showing the full workflow are available in the **`screenshots/`** fo
 
 ## Installation
 
+> ⚠️ **_VERY IMPORTANT:_**  
+> You **must** install `ffmpeg` before proceeding.  
+> Run the following command in your terminal:
+
+1.
+            winget install ffmpeg
+
+
 ### Option 1: Automated Setup (Windows – Recommended)
 
 1. Clone the repository:
