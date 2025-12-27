@@ -60,6 +60,11 @@ Screenshots showing the full workflow are available in the **`screenshots/`** fo
 3. Run the app:
    ```bash
    streamlit run main.py
+4. Or Run this in the terminal
+   ```bash
+   chmod +x setup.sh
+   ./setup.sh
+
 
 ## FFmpeg Requirement (Important)
 
