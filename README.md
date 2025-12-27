@@ -44,7 +44,8 @@ Screenshots showing the full workflow are available in the **`screenshots/`** fo
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/darkwolfamet/Ydl-web.git && cd Ydl-web
+   git clone https://github.com/darkwolfamet/Ydl-web.git
+   cd Ydl-web
 2. Write the command:
    ```bash
    setup.bat
