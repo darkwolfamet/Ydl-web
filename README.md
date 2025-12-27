@@ -55,7 +55,8 @@ You can go to the screenshota folder in the gtihub repo to view the process
 
 You can use it by running 
 
-    streamlit run main.py
+    setup.bat
+This is to be done after cloning the github repo, from above.
 
   
 
