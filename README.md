@@ -36,11 +36,11 @@ Interactive Lottie animations provide visual feedback during processing, making 
 
 So we are going to cover some steps or things to do to make this succesfull
 
-# Windows:
+#   Windows:
 So on windows , before you start anything, open powershell as administrator
 And run this one command
 
-## winget install ffmpeg
+    winget install ffmpeg 
 
 This command or step is very neccesary for the tool to work 
 
